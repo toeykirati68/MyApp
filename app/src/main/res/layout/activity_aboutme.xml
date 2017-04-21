@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.avh_home.myapplication.Aboutme">
+
+    <TextView
+        android:id="@+id/txtTitleAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/my_margin"
+        android:text="@string/aboutMe"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="@dimen/h1"
+        android:textStyle="normal|bold" />
+
+    <ImageView
+        android:id="@+id/imageAbout"
+        android:layout_width="@dimen/my_picture"
+        android:layout_height="@dimen/my_picture"
+        android:layout_below="@id/txtTitleAbout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/my_margin"
+        app:srcCompat="@drawable/pp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="clickBackk"
+        android:text="Back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnBack"
+        android:layout_below="@id/imageAbout"
+        android:layout_margin="@dimen/my_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtAboutScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_margin"
+                android:layout_marginTop="@dimen/my_margin"
+                android:onClick="onClickFacebook"
+                android:text="@string/RAR"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                android:id="@+id/txtTell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_margin"
+                android:layout_marginTop="@dimen/my_margin"
+                android:text="@string/tell" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

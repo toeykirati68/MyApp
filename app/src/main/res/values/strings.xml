@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">My FirstApp</string>;
+    <string name="txtTitle">ป้ายจราจร</string>
+    <string name="MoreInfo">More Info</string>
+    <string name="aboutMe">About Me</string>
+
+    <string name="RAR">
+        ชื่่อ : กีรติ ฉ่ำฉิม \n
+        รหัสนักศึกษา : 5711020660068 \n
+        หลักสูตร : วิทยาการคอมพิวเตอร์ \n
+        FACEBOOK : https://www.facebook.com/toey.kirati
+
+    </string>
+    <string name="tell"><b> เบอร์โทร </b>Tel.0909099361</string>
+
+
+</resources>
